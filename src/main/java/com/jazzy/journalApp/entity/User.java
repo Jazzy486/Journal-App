@@ -1,8 +1,6 @@
 package com.jazzy.journalApp.entity;
 
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 
 
 import javax.persistence.*;
@@ -12,6 +10,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "users")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class User {
